@@ -3,7 +3,7 @@ import { CreateSpectacleDto } from './dto/create-spectacle.dto';
 import { UpdateSpectacleDto } from './dto/update-spectacle.dto';
 import { mockSpectacleData } from './spectacle.mock.data';
 
-let mock_db = [...mockSpectacleData];
+export let mock_db = [...mockSpectacleData];
 
 @Injectable()
 export class SpectacleService {

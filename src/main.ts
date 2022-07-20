@@ -7,7 +7,9 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Iksoris mock API')
-    .setDescription('This mocks the iksoris')
+    .setDescription(
+      'This mocks the iksoris. Use `/iksoris` as you would use `https://bilety.teatrwybrzeze.pl/export.html?json=true`. DB is in memory only, but allows all crud operations.',
+    )
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);

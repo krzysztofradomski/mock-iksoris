@@ -10,7 +10,9 @@ import {
 import { SpectacleService } from './spectacle.service';
 import { CreateSpectacleDto } from './dto/create-spectacle.dto';
 import { UpdateSpectacleDto } from './dto/update-spectacle.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('spectacle')
 @Controller('spectacle')
 export class SpectacleController {
   constructor(private readonly spectacleService: SpectacleService) {}
